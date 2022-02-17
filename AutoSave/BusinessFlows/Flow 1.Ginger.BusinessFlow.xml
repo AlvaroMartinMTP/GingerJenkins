@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="816abd60-6723-4701-8253-d340179924f6" ItemType="BusinessFlow" CreatedBy="alvaro.martin" Created="202202171359" GingerVersion="4.1.0.0" Version="1" LastUpdateBy="alvaro.martin" LastUpdate="202202171359" />
+<BusinessFlow Elapsed="14676" Guid="816abd60-6723-4701-8253-d340179924f6" Name="Flow 1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="d41ecd4e-2e4d-49a6-9abd-6a42ee18ab81" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="80,00 %%" TargetApplication="MyWebApp">
+<Acts>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="60fd27ba-13a9-4dc6-9d92-5cf52b3c6f59" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="b360381b-e3d1-4e9f-906b-a095622b316d" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="c778d8bd-3dcb-4711-83e7-647e04340647" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=URL}" />
+<ActInputValue Guid="8ef001b0-c8fb-46fc-9d97-e3f3c2e4da8a" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="696eea48-df2d-4260-bcb2-0d7beec77624" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="ddca5b98-8c07-4d27-88ea-9dd03d7e935a" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="b713279e-2d35-41c8-8449-c9c7a9258b38" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="7d0c8149-8cbc-4527-adad-d21abdccc60c" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActBrowserElement Description="Go to Url - Chess.com - Play Chess Online - Free Games" Guid="1dd6b4b1-7e1a-4f4c-81c3-81107ba7c334" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="b0c0c00f-127b-491a-b143-2a4d542ee2e6" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="7ff73d1b-148a-4bc8-a5b1-7792d96b7f73" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="4344253e-4787-437a-8fa2-056c4062f62e" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="https://www.chess.com/" />
+<ActInputValue Guid="eb18415b-5cea-4f87-9c2d-126f095e4fec" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="3df1bfde-1877-4563-91dd-77852cf2f29b" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActUIElement Active="True" Description="Cambiar idioma" Guid="784353a4-52b6-40c0-a729-19177ed55b89" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="638ba4f9-0bdb-457d-b891-6f85fc679395" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="7bfd0f81-0614-4a7d-aba4-9cab6e5dae04" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="//*[@id=&quot;sb&quot;]/div[3]/button[1]/span[2]" />
+<ActInputValue Guid="68e92302-39e4-40fc-a454-aa3ca504b380" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Span" />
+<ActInputValue Guid="f850e71c-740f-4918-905b-6a61c53bedf5" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="27608872-44d2-41eb-b7a4-cd400aa3201f" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="&#xA;          English&#xA;        " />
+<ActInputValue Guid="e465a475-51c2-4785-b9c8-8a9ad4f1b413" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="03dd8bfb-8c3e-47d9-bbd3-e43fb7da3469" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="39acf3b0-c031-470f-857d-4b99d24308f0" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="90c360ce-a7b4-4363-b353-0fd275485281" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Seleccionar Español" Guid="95b4d067-380c-492e-a983-9a68ee5526ad" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="fa114efd-d318-4a08-85c9-4388e9ba06b7" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByHref" />
+<ActInputValue Guid="fa2e868e-64a9-48d2-9fbd-ea1ef033d7a5" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/es" />
+<ActInputValue Guid="65e084bf-5941-4c32-b747-abac002d035d" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Button" />
+<ActInputValue Guid="4da7ff6c-4bbc-4ec0-9e4a-17951f68f41d" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="d1ce39af-00c5-452b-b960-a70d4e6c86cc" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="516c0672-8b0c-4860-82f9-0a0950ae2256" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="9604f7b0-83a0-4d74-ad58-8f36b087e1f2" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="f93a9687-a124-438d-a8da-2302d0bc4080" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="0ddaf74a-34b0-4072-aff8-b1c12d6373b7" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActScreenShot Active="True" Description="Screen Shot Action" Guid="ef5b3661-434b-4ed2-afe1-bdeb7aa37c1b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="10" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="c2e8dab8-4ae7-4445-a810-eaeacffa3ffd" Param="SaveToFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="C:\USERS\ALVARO.MARTIN\DESKTOP\CAPTURASGINGER" />
+</InputValues>
+</ActScreenShot>
+</Acts>
+
+<Variables>
+<VariableString Guid="f62e5f3d-2ff0-46a3-bb49-ea3eb2da4641" InitialStringValue="https://www.chess.com/" MappedOutputType="None" Name="URL" ParentGuid="d41ecd4e-2e4d-49a6-9abd-6a42ee18ab81" ParentName="Flow 1\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="ebfe5016-875f-4270-9c92-17998922e3e0" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d41ecd4e-2e4d-49a6-9abd-6a42ee18ab81" ActivityName="Activity 1" Guid="3bc2dab4-59a9-4702-8017-900f1521257c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="7b29a6dc-ec66-4236-912b-b9e8934667d1" LastExecutingAgentName="MyWebApp - Agent 1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>
